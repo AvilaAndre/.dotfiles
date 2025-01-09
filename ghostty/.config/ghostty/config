@@ -1,0 +1,12 @@
+font-family = Iosevka Avila Sans
+font-family-italic =
+font-family-bold-italic =
+font-synthetic-style = false
+font-size = 16
+theme = ayu
+keybind = alt+comma=reload_config
+keybind = ctrl+shift+f11=toggle_fullscreen
+window-padding-color = extend
+window-decoration = false
+shell-integration-features = no-cursor,no-sudo,title
+gtk-titlebar = false
