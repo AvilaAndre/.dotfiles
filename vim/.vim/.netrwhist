@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/ifavila/repos/dotfiles/vim/.vim'
+let g:netrw_dirhist_7='/home/ifavila/repos/dotfiles/vim/.vim/autoload'
+let g:netrw_dirhist_6='/home/ifavila/repos/dotfiles/vim/.vim'
+let g:netrw_dirhist_5='/home/ifavila/repos/dotfiles/vim/.vim/plugged'
+let g:netrw_dirhist_4='/home/ifavila/repos/dotfiles/vim/.vim'
+let g:netrw_dirhist_3='/home/ifavila/repos/dotfiles/vim'
+let g:netrw_dirhist_2='/home/ifavila/repos/dotfiles'
+let g:netrw_dirhist_1='/home/ifavila/repos/dotfiles/scripts'
+let g:netrw_dirhist_0='/home/ifavila/repos/dotfiles'
+let g:netrw_dirhist_9='/home/ifavila/repos/tvvs-project'

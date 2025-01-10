@@ -18,3 +18,4 @@ stow_packages:
 	stow --target=$(HOME) zsh
 	stow --target=$(HOME) ghostty
 	stow --target=$(HOME) nvim
+	stow --target=$(HOME) vim
