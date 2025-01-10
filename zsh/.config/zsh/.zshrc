@@ -24,7 +24,7 @@ FCEDIT=vim
 # shows hidden folders too, except .git
 export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git -f -g \"\""
 
-alias ls=ls\ -a\ --color=auto
+alias ls=ls\ --color=auto
 
 function eh() {
     val=$( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
