@@ -21,7 +21,10 @@ HISTFILE=$ZDOTDIR/.zsh_history
 # replace vim.tiny with vim for fc
 FCEDIT=vim
 
-alias ls=ls\ --color=auto
+# shows hidden folders too, except .git
+export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git -f -g \"\""
+
+alias ls=ls\ -a\ --color=auto
 
 function eh() {
     val=$( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
@@ -31,6 +34,10 @@ function eh() {
 
 function fh() {
     echo $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
+}
+
+function fzf_with_preview() {
+    fzf --preview "batcat --color=always --style=numbers --line-range=:500 {}"
 }
 
 function zsh_source() {
