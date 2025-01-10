@@ -17,3 +17,4 @@ stow_packages:
 	stow --target=$(HOME) tmux
 	stow --target=$(HOME) zsh
 	stow --target=$(HOME) ghostty
+	stow --target=$(HOME) nvim
