@@ -27,7 +27,7 @@ vim.opt.showmode = false
 vim.o.clipboard = 'unnamedplus'
 
 vim.g.lightline = {
-    colorscheme = 'moonfly'
+	colorscheme = 'moonfly'
 }
 
 vim.g.moonflyTransparent = false

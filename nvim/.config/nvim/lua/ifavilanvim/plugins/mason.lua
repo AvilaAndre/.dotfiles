@@ -1,5 +1,5 @@
 return {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    lazy = false,
+	"williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
+	lazy = false,
 }
