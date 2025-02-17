@@ -21,6 +21,7 @@ return {
     require("ifavilanvim.plugins.guess-indent"),
     require("ifavilanvim.plugins.dadbod"),
     require("ifavilanvim.plugins.mini-files"),
+    require("ifavilanvim.plugins.mini-cursorword"),
     -- require("ifavilanvim.plugins.copilot"),
     { "nvzone/showkeys", cmd = "ShowkeysToggle" },
     -- require("ifavilanvim.plugins.markview"),
