@@ -8,6 +8,10 @@ return {
 			width_unfocus = 20,
 			width_preview = 50,
 		},
+		mappings = {
+			go_in = 'L',
+			go_out = 'H',
+		},
 		options = {
 			-- Whether to use for editing directories
 			-- Disabled by default in LazyVim because neo-tree is used for that
@@ -106,6 +110,7 @@ return {
 		vim.api.nvim_create_autocmd("User", {
 			pattern = "MiniFilesActionRename",
 			callback = function(event)
+				-- I don't think this does anything
 				Snacks.rename.on_rename_file(event.data.from, event.data.to)
 			end,
 		})
