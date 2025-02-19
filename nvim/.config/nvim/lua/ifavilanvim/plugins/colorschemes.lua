@@ -7,4 +7,5 @@ return {
 	{ "rose-pine/neovim",              lazy = true,  priority = 1000, name = "rose-pine" },
 	{ "fenetikm/falcon",               lazy = true,  priority = 1000, name = "falcon" },
 	{ "RRethy/base16-nvim",            lazy = true,  priority = 1000 },
+	{ "yazeed1s/oh-lucy.nvim",              lazy = true,  priority = 1000 },
 }
