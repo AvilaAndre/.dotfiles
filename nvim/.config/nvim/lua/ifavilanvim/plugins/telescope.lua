@@ -6,7 +6,7 @@ return {
 			{ "<leader>t",  "<cmd>Telescope<cr>",             desc = "Telescope" },
 			{ "<leader>pf", "<cmd>Telescope find_files<cr>",  desc = "Find Project Files" },
 			{ "<C-p>",      "<cmd>Telescope git_files<cr>",   desc = "Git Files" },
-			{ "<leader>ps", "<cmd>Telescope grep_string<cr>", desc = "Grep in File" },
+			{ "<leader>ps", "<cmd>Telescope live_grep<cr>", desc = "Grep in File" },
 		}
 	end,
 	opts = {
@@ -18,6 +18,20 @@ return {
 				},
 			},
 		},
+		pickers = {
+			find_files = {
+				theme = "ivy"
+			},
+			live_grep = {
+				theme = "ivy"
+			},
+			grep_string = {
+				theme = "ivy"
+			},
+			commands = {
+				theme = "dropdown"
+			},
+		}
 	},
 	lazy = false
 }
