@@ -18,6 +18,7 @@ return {
 	require("ifavilanvim.plugins.mini-cursorword"),
 	require("ifavilanvim.plugins.obsidian"),
 	require("ifavilanvim.plugins.showkeys"),
+	require("ifavilanvim.plugins.leetcode"),
 	-- require("ifavilanvim.plugins.copilot"),
 	-- require("ifavilanvim.plugins.markview"),
 	-- require("ifavilanvim.plugins.nvim-metals")
