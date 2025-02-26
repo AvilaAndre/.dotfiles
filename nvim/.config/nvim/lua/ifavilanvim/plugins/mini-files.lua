@@ -111,7 +111,7 @@ return {
 			pattern = "MiniFilesActionRename",
 			callback = function(event)
 				-- I don't think this does anything
-				Snacks.rename.on_rename_file(event.data.from, event.data.to)
+				-- Snacks.rename.on_rename_file(event.data.from, event.data.to)
 			end,
 		})
 	end,
