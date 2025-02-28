@@ -19,6 +19,8 @@ return {
 	require("ifavilanvim.plugins.obsidian"),
 	require("ifavilanvim.plugins.showkeys"),
 	require("ifavilanvim.plugins.leetcode"),
+	require("ifavilanvim.plugins.vim-surround"),
+
 	-- require("ifavilanvim.plugins.copilot"),
 	-- require("ifavilanvim.plugins.markview"),
 	-- require("ifavilanvim.plugins.nvim-metals")
