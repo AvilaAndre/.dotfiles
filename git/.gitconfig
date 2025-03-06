@@ -1,0 +1,18 @@
+# This is Git's per-user configuration file.
+[user]
+	email = avila_andre14@hotmail.com
+	name = AvilaAndre
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	renames = true
+[color "diff"]
+	oldMoved = brightred bold
+	newMoved = brightblue bold
+
+[tag]
+	sort = version:refname

@@ -19,3 +19,4 @@ stow_packages:
 	stow --target=$(HOME) --restow ghostty
 	stow --target=$(HOME) --restow nvim
 	stow --target=$(HOME) --restow vim
+	stow --target=$(HOME) --restow git
