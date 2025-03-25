@@ -21,6 +21,8 @@ return {
 	require("ifavilanvim.plugins.leetcode"),
 	require("ifavilanvim.plugins.vim-surround"),
 	require("ifavilanvim.plugins.lualine"),
+	require("ifavilanvim.plugins.nvim-jdtls"),
+	{ 'akinsho/git-conflict.nvim', version = "*", config = true },
 
 	-- require("ifavilanvim.plugins.copilot"),
 	-- require("ifavilanvim.plugins.markview"),

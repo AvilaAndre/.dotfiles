@@ -23,6 +23,7 @@ return {
 				ensure_installed = {},
 				handlers = {
 					lsp_zero.default_setup,
+					jdtls = function () end
 				},
 			})
 
