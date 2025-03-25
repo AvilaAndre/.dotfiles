@@ -7,11 +7,9 @@ return {
 	require("ifavilanvim.plugins.mason"),
 	require("ifavilanvim.plugins.lspconfig"),
 	require("ifavilanvim.plugins.lsp-zero"),
-	-- require("ifavilanvim.plugins.modicator"),
 	require("ifavilanvim.plugins.todo-comments"),
 	require("ifavilanvim.plugins.trouble"),
 	require("ifavilanvim.plugins.gitsigns"),
-	-- require("ifavilanvim.plugins.lightline"),
 	require("ifavilanvim.plugins.guess-indent"),
 	require("ifavilanvim.plugins.dadbod"),
 	require("ifavilanvim.plugins.mini-files"),
@@ -22,11 +20,13 @@ return {
 	require("ifavilanvim.plugins.vim-surround"),
 	require("ifavilanvim.plugins.lualine"),
 	require("ifavilanvim.plugins.nvim-jdtls"),
-	{ 'akinsho/git-conflict.nvim', version = "*", config = true },
+	require("ifavilanvim.plugins.git-conflict"),
 
 	-- require("ifavilanvim.plugins.copilot"),
 	-- require("ifavilanvim.plugins.markview"),
 	-- require("ifavilanvim.plugins.nvim-metals")
+	-- require("ifavilanvim.plugins.modicator"),
+	-- require("ifavilanvim.plugins.lightline"),
 
 	require("ifavilanvim.custom_plugins.term-window"),
 }
