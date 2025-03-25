@@ -20,7 +20,7 @@ vim.opt.scrolloff = 8
 vim.g.mapleader = " "
 
 vim.opt.list = true
-vim.opt.listchars = { space = '·', tab = '⭾ ' }
+vim.opt.listchars = { space = '·', tab = '⭾ ', eol = '⮐' }
 
 vim.opt.showmode = false
 
