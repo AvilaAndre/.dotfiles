@@ -63,3 +63,12 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Turso
+export PATH="$PATH:/home/ifavila/.turso"
+
+# bun completions
+[ -s "/home/ifavila/.bun/_bun" ] && source "/home/ifavila/.bun/_bun"
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
