@@ -1,8 +1,8 @@
 .PHONY: all
 
-all: setup tmux_setup stow_packages
+all: setup stow_packages
 
-setup: stow_install tmux_setup zsh_setup
+setup: stow_install tmux_setup zsh_setup kiex_setup
 
 stow_install:
 	bash scripts/install_stow.sh
@@ -12,6 +12,9 @@ tmux_setup:
 
 zsh_setup:
 	bash scripts/zsh_setup.sh
+
+kiex_setup:
+	bash scripts/kiex_setup.sh
 
 stow_packages:
 	stow --target=$(HOME) --restow tmux
