@@ -1,6 +1,7 @@
 return {
 	require("ifavilanvim.plugins.colorschemes"),
-	require("ifavilanvim.plugins.cmp"),
+	-- require("ifavilanvim.plugins.cmp"),
+	require("ifavilanvim.plugins.blink"),
 	require("ifavilanvim.plugins.telescope"),
 	require("ifavilanvim.plugins.treesitter"),
 	require("ifavilanvim.plugins.autopairs"),
