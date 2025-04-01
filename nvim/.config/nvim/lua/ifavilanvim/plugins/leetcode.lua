@@ -10,5 +10,14 @@ return {
 	},
 	opts = {
 		-- configuration goes here
+		lang = "python3",
+
+		hooks = {
+			["question_enter"] = {
+				function ()
+					vim.cmd([[LspStop pylsp]])
+				end
+			},
+		},
 	},
 }
