@@ -70,7 +70,9 @@ local config = {
     workspace_dir,
   },
   -- on_attach = require("plugins.lsp.opts").on_attach,
-  capabilities = require("cmp_nvim_lsp").default_capabilities(),
+  -- replaced nvim cmp with blink
+  capabilities = require('blink.cmp').get_lsp_capabilities(),
+  -- capabilities = require("cmp_nvim_lsp").default_capabilities(),
   -- 💀
   -- This is the default if not provided, you can remove it. Or adjust as needed.
   -- One dedicated LSP server & client will be started per unique root_dir
