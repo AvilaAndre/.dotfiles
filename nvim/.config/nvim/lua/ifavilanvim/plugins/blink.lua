@@ -19,7 +19,7 @@ return {
 		},
 
 		completion = {
-			documentation = { auto_show = false },
+			documentation = { auto_show = true },
 			list = {
 				selection = {
 					preselect = false,
