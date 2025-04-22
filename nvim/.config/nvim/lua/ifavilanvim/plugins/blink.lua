@@ -31,7 +31,7 @@ return {
 			menu = {
 				draw = {
 					columns = {
-						{ "label", "label_description", gap = 1 }, { "kind_icon", "kind", gap = 1 },
+						{ "kind_icon", gap = 1 }, { "label", "label_description", gap = 1 }, { "kind", gap = 1 },
 					},
 				},
 			},
@@ -47,7 +47,28 @@ return {
 
 		snippets = { preset = 'luasnip' },
 
-		fuzzy = { implementation = "prefer_rust_with_warning" }
+		fuzzy = { implementation = "prefer_rust_with_warning" },
+
+		cmdline = {
+			enabled = true,
+			sources = function()
+				local type = vim.fn.getcmdtype()
+				-- Search forward and backward
+				if type == '/' or type == '?' then return { 'buffer' } end
+				-- Commands
+				if type == ':' or type == '@' then return { 'cmdline' } end
+				return {}
+			end,
+
+			completion = {
+				list = {
+					selection = {
+						preselect = false,
+						auto_insert = true,
+					},
+				},
+			}
+		}
 
 	},
 	opts_extend = { "sources.default" }
