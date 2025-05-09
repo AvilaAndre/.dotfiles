@@ -46,12 +46,23 @@
 	frag       = magenta
 	context    = white
 
-[color "blame"]
-	highlightRecent = red bold,3 months ago,yellow bold,1 month ago,green,7 days ago,blue
-
 [diff-so-fancy]
 	markEmptyLines  = false
 	useUnicodeRuler = false
+
+[color "branch"]
+    current  = magenta
+    local    = default
+    remote   = yellow
+    upstream = green
+    plain    = blue
+
+[color "blame"]
+	highlightRecent = red bold,3 months ago,yellow bold,1 month ago,green,7 days ago,blue
+
+[log]
+	abbrevCommit = true
+	graphColors = blue,yellow,cyan,magenta,green,red
 
 [tag]
 	sort = version:refname
@@ -59,3 +70,4 @@
 # URL shortcuts
 [url "git@github.com:"]
 	insteadOf = "gh:"
+
