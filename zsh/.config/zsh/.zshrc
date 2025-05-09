@@ -24,7 +24,8 @@ FCEDIT=vim
 # shows hidden folders too, except .git
 export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git -f -g \"\""
 
-alias ls=ls\ --color=auto
+alias ls=ls\ --color=auto\ -F
+alias eza=eza\ -F\ --color\ --icons
 
 function eh() {
     val=$( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
@@ -48,6 +49,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# git settings
+source $ZDOTDIR/git.zsh
 
 # plugins
 source $ZDOTDIR/plugins.zsh
@@ -75,3 +78,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
+source /usr/local/lib/erlang/27.3/activate
+
+# kiex use 1.18.3-27
