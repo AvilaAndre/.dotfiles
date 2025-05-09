@@ -1,38 +1,38 @@
 # This is Git's per-user configuration file.
 [user]
 	email = avila_andre14@hotmail.com
-	name = AvilaAndre
+	name  = AvilaAndre
 
 [init]
 	defaultBranch = main
 
 [core]
 	editor = vim
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager  = diff-so-fancy | less --tabs=4 -RFX
 
 [commit]
 	template = ~/.config/git/template
 
 [push]
 	autoSetupRemote = true  # easier to push new branches
-	default = current  # push only current branch by default
-	followTags = true  # push also tags
+	default         = current  # push only current branch by default
+	followTags      = true  # push also tags
 
 [pager]
 	branch = false
 
 [diff]
-	algorithm = histogram
+	algorithm  = histogram
 	colorMoved = plain
-	renames = true
+	renames    = true
 
 [interactive]
 	diffFilter = diff-so-fancy --patch
-	singlekey = true
+	singlekey  = true
 
 [blame]
 	coloring = highlightRecent
-	date = relative
+	date     = relative
 
 [color "diff"]
 	oldMoved   = brightred bold
@@ -46,7 +46,7 @@
 	highlightRecent = red bold,3 months ago,yellow bold,1 month ago,green,7 days ago,blue
 
 [diff-so-fancy]
-	markEmptyLines = false
+	markEmptyLines  = false
 	useUnicodeRuler = false
 
 [tag]
