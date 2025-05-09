@@ -10,6 +10,9 @@
 	editor = vim
 	pager = diff-so-fancy | less --tabs=4 -RFX
 
+[commit]
+	template = ~/.config/git/template
+
 [pager]
 	branch = false
 
