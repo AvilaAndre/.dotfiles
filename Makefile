@@ -2,7 +2,7 @@
 
 all: setup stow_packages
 
-setup: stow_install tmux_setup zsh_setup kiex_setup
+setup: stow_install tmux_setup zsh_setup kiex_setup tools_setup
 
 stow_install:
 	bash scripts/install_stow.sh
@@ -15,6 +15,9 @@ zsh_setup:
 
 kiex_setup:
 	bash scripts/kiex_setup.sh
+
+tools_setup:
+	bash scripts/tools_setup.sh
 
 stow_packages:
 	stow --target=$(HOME) --restow tmux
