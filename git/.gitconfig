@@ -13,6 +13,11 @@
 [commit]
 	template = ~/.config/git/template
 
+[push]
+	autoSetupRemote = true  # easier to push new branches
+	default = current  # push only current branch by default
+	followTags = true  # push also tags
+
 [pager]
 	branch = false
 
