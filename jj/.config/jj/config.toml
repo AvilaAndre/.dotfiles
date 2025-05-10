@@ -1,0 +1,23 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+email = "avila_andre14@hotmail.com"
+
+[user]
+name = "AvilaAndre"
+email = "avila_andre14@hotmail.com"
+
+[ui]
+editor = "vim"
+
+[templates]
+draft_commit_description = '''
+concat(
+	"JJ: feat:\nJJ: fix:\nJJ: style:\nJJ: ci:\nJJ: deploy:\nJJ: chore:\nJJ: refactor:\nJJ: test:\nJJ: debug:",
+	coalesce(description, default_commit_description, "\n"),
+	surround(
+		"\nJJ: This commit contains the following changes:\n", "",
+		indent("JJ:     ", diff.stat(72)),
+	),
+	"\nJJ: ignore-rest\n",
+	diff.git(),
+)
+'''
