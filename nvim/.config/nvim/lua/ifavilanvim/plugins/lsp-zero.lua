@@ -10,10 +10,10 @@ return {
 
 			-- if not lsp_zero then return end
 			lsp_zero.on_attach(function(_client, bufnr)
-				-- see :help lsp-zero-keybindings
-				-- to learn the available actions
 				local opts = { buffer = bufnr, silent = true }
 
+				-- see :help lsp-zero-keybindings
+				-- to learn the available actions
 				-- lsp_zero.default_keymaps({ buffer = bufnr })
 
 				-- show definition, references
