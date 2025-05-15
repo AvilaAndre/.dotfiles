@@ -18,3 +18,5 @@ alias gb="git branch"
 alias gba="gb --all"
 
 alias gcl="git clone"
+
+alias gco="git checkout"
