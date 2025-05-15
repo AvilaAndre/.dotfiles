@@ -20,3 +20,5 @@ alias gba="gb --all"
 alias gcl="git clone"
 
 alias gco="git checkout"
+
+alias gsta="git stash"
