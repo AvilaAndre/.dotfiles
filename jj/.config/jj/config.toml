@@ -7,6 +7,7 @@ email = "avila_andre14@hotmail.com"
 
 [ui]
 editor = "vim"
+default-command = "log"
 
 [templates]
 draft_commit_description = '''
