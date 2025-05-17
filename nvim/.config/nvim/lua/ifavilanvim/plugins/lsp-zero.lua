@@ -91,6 +91,9 @@ return {
 			-- disable auto format on save from zls
 			vim.g.zig_fmt_autosave = 0
 
+			-- TODO: Move this configuration elsewhere
+			vim.diagnostic.config({ virtual_text = true })
+
 			vim.lsp.config("pylsp", {
 				settings = {
 					pylsp = {
