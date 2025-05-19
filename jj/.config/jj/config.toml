@@ -12,7 +12,7 @@ default-command = "log"
 [templates]
 draft_commit_description = '''
 concat(
-	"JJ: feat:\nJJ: fix:\nJJ: style:\nJJ: ci:\nJJ: deploy:\nJJ: chore:\nJJ: refactor:\nJJ: test:\nJJ: debug:",
+	"JJ: feat:\nJJ: fix:\nJJ: style:\nJJ: ci:\nJJ: deploy:\nJJ: chore:\nJJ: refactor:\nJJ: test:\nJJ: debug:\n",
 	coalesce(description, default_commit_description, "\n"),
 	surround(
 		"\nJJ: This commit contains the following changes:\n", "",
