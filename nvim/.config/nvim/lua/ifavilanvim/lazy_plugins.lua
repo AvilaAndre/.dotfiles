@@ -1,6 +1,5 @@
 return {
 	require("ifavilanvim.plugins.colorschemes"),
-	-- require("ifavilanvim.plugins.cmp"),
 	require("ifavilanvim.plugins.blink"),
 	require("ifavilanvim.plugins.telescope"),
 	require("ifavilanvim.plugins.treesitter"),
@@ -23,6 +22,7 @@ return {
 	require("ifavilanvim.plugins.nvim-jdtls"),
 	require("ifavilanvim.plugins.git-conflict"),
 
+	-- require("ifavilanvim.plugins.cmp"),
 	-- require("ifavilanvim.plugins.copilot"),
 	-- require("ifavilanvim.plugins.markview"),
 	-- require("ifavilanvim.plugins.nvim-metals")

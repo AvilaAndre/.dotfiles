@@ -141,6 +141,20 @@ return {
 					},
 				},
 			})
+
+			vim.lsp.config("rust_analyzer", {
+				settings = {
+					checkOnSave = {
+						command = "clippy",
+					},
+				},
+			})
+
+			vim.lsp.config("tinymist", {
+				settings = {
+					formatterMode = "typstyle",
+				}
+			})
 		end
 	},
 	{ 'neovim/nvim-lspconfig' },
