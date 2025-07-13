@@ -1,10 +1,3 @@
--- vim settings
-require("ifavilanvim.set")
-
--- keymaps
-require("ifavilanvim.remap")
-
--- lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -18,11 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("ifavilanvim.lazy_plugins")
+require("lazy").setup({import = "lazy_plugins" } , {
+	install = {
+		missing = true,
+		colorscheme = { "habamax" }
+	},
+})
 
--- theme
-vim.o.background = "dark"
-vim.cmd([[colorscheme base16-oxocarbon-dark]])
-
--- line
-require('lualine').setup()

@@ -17,6 +17,9 @@ vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
 
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 300
+
 vim.g.mapleader = " "
 
 vim.opt.list = true

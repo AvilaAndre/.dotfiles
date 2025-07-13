@@ -1,0 +1,32 @@
+return {
+	require("plugins.colorschemes"),
+	require("plugins.blink"),
+	require("plugins.telescope"),
+	require("plugins.treesitter"),
+	require("plugins.autopairs"),
+	require("plugins.mason"),
+	require("plugins.lspconfig"),
+	require("plugins.todo-comments"),
+	require("plugins.trouble"),
+	require("plugins.gitsigns"),
+	require("plugins.guess-indent"),
+	require("plugins.dadbod"),
+	require("plugins.mini-files"),
+	require("plugins.mini-cursorword"),
+	require("plugins.obsidian"),
+	require("plugins.showkeys"),
+	require("plugins.leetcode"),
+	require("plugins.vim-surround"),
+	require("plugins.lualine"),
+	require("plugins.nvim-jdtls"),
+	require("plugins.git-conflict"),
+
+	-- require("plugins.cmp"),
+	-- require("plugins.copilot"),
+	-- require("plugins.markview"),
+	-- require("plugins.nvim-metals")
+	-- require("plugins.modicator"),
+	-- require("plugins.lightline"),
+
+	require("custom_plugins.term-window"),
+}
