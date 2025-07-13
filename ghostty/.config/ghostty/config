@@ -3,7 +3,7 @@ font-family-italic =
 font-family-bold-italic =
 font-synthetic-style = false
 font-size = 16
-theme = ayu
+theme = Oxocarbon
 keybind = alt+comma=reload_config
 keybind = ctrl+shift+f11=toggle_fullscreen
 window-padding-color = extend
