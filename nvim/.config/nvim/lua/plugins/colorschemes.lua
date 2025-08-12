@@ -16,4 +16,6 @@ return {
 			}
 		end,
 	},
+	{ "vague2k/vague.nvim", lazy = true,  priority = 1000 },
+	{ "NLKNguyen/papercolor-theme", lazy = true,  priority = 1000 },
 }

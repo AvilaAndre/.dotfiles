@@ -1,7 +1,6 @@
 return {
 	require("plugins.colorschemes"),
 	require("plugins.blink"),
-	require("plugins.telescope"),
 	require("plugins.treesitter"),
 	require("plugins.autopairs"),
 	require("plugins.mason"),
@@ -20,7 +19,10 @@ return {
 	require("plugins.lualine"),
 	require("plugins.nvim-jdtls"),
 	require("plugins.git-conflict"),
+	require("plugins.snacks"),
+	require("plugins.flutter-tools"),
 
+	-- require("plugins.telescope"),
 	-- require("plugins.cmp"),
 	-- require("plugins.copilot"),
 	-- require("plugins.markview"),

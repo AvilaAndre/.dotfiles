@@ -6,7 +6,7 @@ return {
 			{ "<leader>t",  "<cmd>Telescope<cr>",             desc = "Telescope" },
 			{ "<leader>pf", "<cmd>Telescope find_files<cr>",  desc = "Find Project Files" },
 			{ "<C-p>",      "<cmd>Telescope git_files<cr>",   desc = "Git Files" },
-			{ "<leader>ps", "<cmd>Telescope live_grep<cr>", desc = "Grep in File" },
+			{ "<leader>ps", "<cmd>Telescope live_grep<cr>",   desc = "Grep in File" },
 		}
 	end,
 	opts = {
