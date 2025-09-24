@@ -63,7 +63,7 @@ local function setup(opts)
 	end, {})
 
 
-	vim.keymap.set('n', '<leader>q', '<cmd>TermWindow<cr>')
+	-- vim.keymap.set('n', '<leader>q', '<cmd>TermWindow<cr>')
 end
 
 return { setup = setup }

@@ -21,6 +21,7 @@ return {
 	require("plugins.git-conflict"),
 	require("plugins.snacks"),
 	require("plugins.flutter-tools"),
+	require("plugins.luapad"),
 
 	-- require("plugins.telescope"),
 	-- require("plugins.cmp"),
